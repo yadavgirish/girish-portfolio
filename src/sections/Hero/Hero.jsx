@@ -6,13 +6,27 @@ import {
 } from "react-icons/fi";
 
 import { Link } from "react-router-dom";
+
 import Reveal from "../../components/Reveal/Reveal";
 
 function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[calc(100vh-80px)] w-full items-center overflow-hidden px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-24"
+      className="
+        relative
+        flex
+        min-h-[calc(100vh-80px)]
+        w-full
+        items-center
+        overflow-hidden
+        px-6
+        py-16
+        sm:px-10
+        sm:py-20
+        lg:px-16
+        lg:py-24
+      "
     >
       {/* Background Glow */}
       <div
@@ -46,13 +60,23 @@ function Hero() {
       />
 
       {/* Main Container */}
-      <div className="relative mx-auto w-full max-w-7xl">
+      <div
+        className="
+          relative
+          mx-auto
+          flex
+          w-full
+          max-w-7xl
+          flex-col
+          justify-center
+        "
+      >
         <div className="max-w-5xl">
-
           {/* Small Label */}
           <Reveal delay={0}>
             <div className="mb-7 flex items-center gap-3 sm:mb-9">
               <span className="h-px w-9 bg-[var(--text)] opacity-40 sm:w-11" />
+
               <span className="text-xs font-medium uppercase tracking-[0.22em] opacity-50 sm:text-sm">
                 Full-Stack Developer
               </span>
@@ -75,6 +99,7 @@ function Hero() {
               "
             >
               I build digital
+
               <span className="block opacity-35">
                 experiences.
               </span>
@@ -92,16 +117,31 @@ function Hero() {
             </div>
           </Reveal>
 
+          {/* Mobile Spacer */}
+          <div className="h-20 sm:hidden" />
+
           {/* Actions */}
           <Reveal delay={300}>
-            <div className="mt-8 flex flex-wrap items-center gap-3 sm:mt-9 sm:gap-4">
+            <div
+              className="
+                flex
+                flex-col
+                gap-3
+                sm:mt-9
+                sm:flex-row
+                sm:items-center
+                sm:gap-4
+              "
+            >
               {/* View Work */}
               <Link
                 to="/projects"
                 className="
                   group
                   inline-flex
+                  w-full
                   items-center
+                  justify-center
                   gap-3
                   rounded-full
                   bg-[var(--text)]
@@ -114,6 +154,7 @@ function Hero() {
                   duration-300
                   hover:-translate-y-1
                   hover:shadow-[0_14px_40px_rgba(0,0,0,0.14)]
+                  sm:w-auto
                 "
               >
                 View My Work
@@ -134,7 +175,9 @@ function Hero() {
                 href="#contact"
                 className="
                   inline-flex
+                  w-full
                   items-center
+                  justify-center
                   rounded-full
                   border
                   border-[color:var(--border)]
@@ -148,6 +191,7 @@ function Hero() {
                   hover:bg-[var(--text)]
                   hover:text-[var(--bg)]
                   hover:shadow-[0_14px_40px_rgba(0,0,0,0.12)]
+                  sm:w-auto
                 "
               >
                 Let's Talk
@@ -157,7 +201,16 @@ function Hero() {
 
           {/* Social Links */}
           <Reveal delay={400}>
-            <div className="mt-7 flex items-center gap-3">
+            <div
+              className="
+                mt-7
+                flex
+                items-center
+                justify-center
+                gap-3
+                sm:justify-start
+              "
+            >
               {/* GitHub */}
               <a
                 href="https://github.com/yadavgirish"
@@ -213,10 +266,9 @@ function Hero() {
               </a>
             </div>
           </Reveal>
-
         </div>
 
-        {/* Scroll Indicator */}
+        {/* Desktop Scroll Indicator */}
         <Reveal delay={500}>
           <div
             className="
@@ -231,6 +283,7 @@ function Hero() {
             "
           >
             <FiMousePointer className="text-sm" />
+
             <span className="text-[10px] font-medium uppercase tracking-[0.22em]">
               Scroll to explore
             </span>
