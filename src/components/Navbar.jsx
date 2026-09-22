@@ -7,7 +7,7 @@ import {
 
 import ThemeToggle from "./ThemeToggle";
 
-const logoImage = null;
+const logoImage = "https://lh3.googleusercontent.com/a/ACg8ocLmqclV2gK5VEskvVIMA_NsRX8AIY6lf9PM1L4HLnMrzDRvFnJa=s192-c-mo";
 
 // Example:
 // const logoImage = "/logo.png";
