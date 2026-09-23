@@ -1,38 +1,46 @@
 const projects = [
   {
     number: "01",
-    slug: "e-commerce-platform",
-    title: "E-Commerce Platform",
+    slug: "max-arena",
+    title: "MAX ARENA",
 
     shortDescription:
-      "A full-stack e-commerce platform with authentication, product management, shopping cart, and media handling.",
+      "A production-style full-stack fitness platform with authentication, memberships, program discovery, contact management, and a dedicated admin dashboard.",
 
     description:
-      "A complete full-stack e-commerce application built to handle the core flow of an online shopping platform, including authentication, product management, cart functionality and media handling.",
+      "MAX ARENA is a full-stack fitness platform built with React, Node.js, Express, and MongoDB. It includes user authentication, membership and joining flows, program and trainer discovery, contact enquiries, protected routes, and a dedicated admin dashboard for managing users and enquiries.",
 
-    image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/Project1.png",
 
     technologies: [
       "React",
+      "Vite",
+      "Tailwind CSS",
       "Node.js",
       "Express",
       "MongoDB",
       "JWT",
-      "Cloudinary",
+      "REST API",
+      "Vercel",
     ],
 
     features: [
-      "User authentication",
-      "Product management",
-      "Shopping cart",
-      "Protected routes",
-      "Media upload and handling",
+      "User registration and authentication",
+      "Protected user routes",
+      "Membership plan selection",
+      "Program and trainer discovery",
+      "Join and free-trial flows",
+      "Contact enquiry system",
+      "Dedicated admin dashboard",
+      "User and contact management",
+      "Contact status management",
+      "Admin authentication and protected routes",
       "REST API integration",
+      "Production deployment",
     ],
 
-    github: "#",
-    live: "#",
+    github: "https://github.com/yadavgirish/max-arena-frontend",
+    live: "https://max-arena-frontend.vercel.app",
   },
 
   {
@@ -85,14 +93,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80",
 
-    technologies: [
-      "Python",
-      "NLP",
-      "TF-IDF",
-      "Naive Bayes",
-      "SVM",
-      "Flask",
-    ],
+    technologies: ["Python", "NLP", "TF-IDF", "Naive Bayes", "SVM", "Flask"],
 
     features: [
       "News text processing",

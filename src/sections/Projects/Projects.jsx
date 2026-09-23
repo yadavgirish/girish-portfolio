@@ -7,65 +7,7 @@ import {
 import { Link } from "react-router-dom";
 import Reveal from "../../components/Reveal/Reveal";
 
-const projects = [
-  {
-    number: "01",
-    slug: "e-commerce-platform",
-    title: "E-Commerce Platform",
-    description:
-      "A full-stack e-commerce platform with authentication, product management, shopping cart, and media handling.",
-    technologies: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "JWT",
-      "Cloudinary",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80",
-    github: "#",
-    live: "#",
-  },
-  {
-    number: "02",
-    slug: "whatsapp-clone",
-    title: "WhatsApp Clone",
-    description:
-      "A real-time messaging application focused on private conversations, authentication, and live communication.",
-    technologies: [
-      "React",
-      "Node.js",
-      "Socket.IO",
-      "MongoDB",
-      "Express",
-      "JWT",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1611746872915-64382b5c76da?auto=format&fit=crop&w=1200&q=80",
-    github: "#",
-    live: "#",
-  },
-  {
-    number: "03",
-    slug: "fake-news-detection",
-    title: "Fake News Detection",
-    description:
-      "A machine-learning based application that analyzes news content and predicts whether it is likely to be real or fake.",
-    technologies: [
-      "Python",
-      "NLP",
-      "TF-IDF",
-      "Naive Bayes",
-      "SVM",
-      "Flask",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80",
-    github: "#",
-    live: "#",
-  },
-];
+import projects from "../../data/project";
 
 function Projects() {
   return (
